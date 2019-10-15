@@ -43,6 +43,6 @@ class Song
 
   def self.new_from_filename(song)
     new_song_object = song.split(" - ")
-    new_song_object[1]
+    song.name = new_song_object[1]
   end
 end
