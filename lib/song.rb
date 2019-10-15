@@ -48,4 +48,13 @@ class Song
     new_song.artist_name = new_song_object[0]
     new_song
   end
+
+  def self.create_from_filename(song)
+    new_song = self.new
+    new_song_object = song.split(" - ")
+    new_song.name = new_song_object[1].delete_suffix(".mp3")
+    new_song.artist_name = new_song_object[0]
+    new_song.save
+    new_song
+  end 
 end
