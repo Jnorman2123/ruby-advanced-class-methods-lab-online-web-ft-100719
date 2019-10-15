@@ -56,5 +56,5 @@ class Song
     new_song.artist_name = new_song_object[0]
     new_song.save
     new_song
-  end 
+  end
 end
